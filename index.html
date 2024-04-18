@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <!-- should i use card instead? -->
+    <div id="main-box">
+        <div class="container">
+            <div id="form-header">
+                <h1>Today's To-Do List</h1>
+                <h5 id="current-date"></h5>
+                <form id="add-act">
+                    <input type="text" id="new-act">
+                    <button type="submit">Add Activity</button>
+                </form>
+            </div>
+        </div>
+        <!-- <div id="form">
+            <div class="container">
+                <div class="act-list"><span class="act-order">#1</span> <p class="act-name">Activity One</p> <span class="checker">CHECKBOX</span></div></div>
+                <div class="act-list"><span class="act-order">#2</span> <p class="act-name">Activity Two</p> <span class="checker">CHECKBOX</span></div></div>
+                <div class="act-list"><span class="act-order">#3</span> <p class="act-name">Activity Three</p> <span class="checker">CHECKBOX</span></div></div>
+            </div>
+        </div> -->
+        <div class="container">
+            <table id="form-table">
+                <tr class="act-list">
+                    <td class="act-order">#1</td>
+                    <td class="act-name">Activity One</td>
+                    <td class="act-check"><input type="checkbox" class="checkbox" onclick="myFunction()"></td>
+                </tr>
+                <tr class="act-list">
+                    <td class="act-order">#2</td>
+                    <td class="act-name">Activity Two</td>
+                    <td class="act-check"><input type="checkbox" class="checkbox" onclick="myFunction()"></td>
+                </tr>
+                <tr class="act-list">
+                    <td class="act-order">#3</td>
+                    <td class="act-name">Activity Three</td>
+                    <td class="act-check"><input type="checkbox" class="checkbox" onclick="myFunction()"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
