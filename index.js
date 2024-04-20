@@ -8,6 +8,7 @@ document.getElementById("current-date").appendChild(currentDate);
 
 const taskInput = document.getElementById("task-input");
 const appTable = document.getElementById("app-table");
+// const taskList = document.getElementById
 
 function addTask() {
     if(taskInput.value === "") {
@@ -25,7 +26,28 @@ function addTask() {
     }
     // clear input box
     taskInput.value = "";
+    saveData();
 }
+
+appTable.addEventListener("click", function(e) {
+    if(e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
+        saveData();
+    } else if(e.target.tagName === "SPAN") {
+        e.target.parentElement.remove();
+        saveData();
+    }
+}, false);
+
+function saveData() {
+    localStorage.setItem("data", appTable.innerHTML);
+}
+
+function showData() {
+    appTable.innerHTML = localStorage.getItem("data");
+}
+
+showData();
 
 // function myFunction() {
 //     // var checkBox = document.querySelector("checkbox");
