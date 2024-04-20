@@ -3,7 +3,6 @@
 /* GLOBAL */
 body {
     font-family: 'Poppins', sans-serif;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -11,10 +10,7 @@ body {
 }
 
 .container {
-    /* background-color: #faebd7; */
     padding: 2px;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 #main-box {
@@ -25,68 +21,59 @@ body {
 }
 
 /* FORM HEADER */
-#form-header {
+#app-header {
     background-color: rgb(217, 227, 241);
-    /* background-color: #faebd7; */
     text-align: center;
     margin: 0;
     padding: 10px 0 10px 0;
     width: 100%;
 }
 
-#form-header h1, #current-date {
+#app-header h1, #current-date {
     margin: 0;
 }
 
-#add-act {
-    /* background-color: #696969; */
+#add-task {
     text-align: center;
     padding: 5px 0 5px 0;
     margin-bottom: 5px;
     width: 100%;
-    /* align-items: center; */
     justify-content: center;
 }
 
-#new-act {
+#new-task {
     width: 50%;
     margin-right: 5px;
 }
 
-/* FORM TABLE */
-#form-table {
-    /* background-color: #7fffd4; */
+/* APP TABLE */
+#app-table {
     margin: 0;
     width: 100%;
-    /* overflow: hidden; */
 }
 
-.act-list {
-    /* background-color: #6495ed; */
-    /* border-style: 1px solid aqua; */
-}
-
-.act-order, .act-check {
+.task-order, .task-check {
     text-align: center;
     padding: 0;
 }
 
-.act-name {
+.task-name {
     padding: 0 5px 0 5px;
 }
 
 .checkbox {
-    /* width: 100%; */
     align-items: center;
     justify-content: center;
     height: 30px;
     width: 30px;
     outline: 1px solid 7fffd4;
-    /* width: 50px; */
 }
 
-/* .checkbox:hover {
-    background-color: #ccc;
-} */
+.checked {
+    background-color: #808080;
+}
 
-/* 16:46 */
+.dummyStyle {
+    font-style: italic;
+    font-weight: 100;
+}
