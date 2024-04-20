@@ -46,8 +46,37 @@ body {
     margin-right: 5px;
 }
 
-/* APP TABLE */
-#app-table {
+ul li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75%;
+    /* background-color: cadetblue; */
+    /* padding-left: 10px; */
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+ul li span {
+    /* background-color: bisque; */
+    text-align: center;
+    margin-right: 30px;
+}
+
+ul li span:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 85%);
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* APP TABLE (POSSIBLY UNUSED) */
+/* #app-table {
     margin: 0;
     width: 100%;
 }
@@ -71,9 +100,4 @@ body {
 
 .checked {
     background-color: #808080;
-}
-
-.dummyStyle {
-    font-style: italic;
-    font-weight: 100;
-}
+} */
