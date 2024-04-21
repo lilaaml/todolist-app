@@ -2,13 +2,8 @@ const currentDate = document.createTextNode(new Date().toDateString());
 
 document.getElementById("current-date").appendChild(currentDate);
 
-// const newAct = (document.getElementById("new-act")).value;
-
-// document.querySelector("act-one").appendChild(newAct);
-
 const taskInput = document.getElementById("task-input");
 const taskShowcase = document.getElementById("task-showcase");
-// const taskList = document.getElementById
 
 function addTask() {
     if(taskInput.value === "") {
@@ -52,19 +47,3 @@ function clearData() {
 }
 
 showData();
-
-// function myFunction() {
-//     // var checkBox = document.querySelector("checkbox");
-//     // var actList = document.querySelector("act-list");
-
-//     // if(checkBox.checked == true) {
-//     //     actList.classList.add("checked");
-//     //     console.log("it's working");
-//     // }
-
-//     var dummyBox = document.getElementById("dummyBox");
-    
-//     if(dummyBox.checked == true) {
-//         dummyBox.classList.add("dummyStyle");
-//     }
-// }
