@@ -7,7 +7,17 @@ const taskShowcase = document.getElementById("task-showcase");
 
 function addTask() {
     if(taskInput.value === "") {
-        console.log("empty task");
+        const mainBox = document.getElementById("main-box");
+        const appHeader = document.getElementById("app-header");
+
+        let alertMsg = document.createElement("p");
+        alertMsg.innerHTML = "The task is empty!"
+        
+        mainBox.insertBefore(alertMsg, appHeader);
+
+        setTimeout(function() {
+            alertMsg.style.display = "none";
+        }, 2000);
     } else {
         // display new task
         let newTask = document.createElement("li");
