@@ -7,7 +7,7 @@ document.getElementById("current-date").appendChild(currentDate);
 // document.querySelector("act-one").appendChild(newAct);
 
 const taskInput = document.getElementById("task-input");
-const appTable = document.getElementById("app-table");
+const taskShowcase = document.getElementById("task-showcase");
 // const taskList = document.getElementById
 
 function addTask() {
@@ -17,7 +17,7 @@ function addTask() {
         // display new task
         let newTask = document.createElement("li");
         newTask.innerHTML = taskInput.value;
-        appTable.appendChild(newTask);
+        taskShowcase.appendChild(newTask);
 
         // cross button
         let cross = document.createElement("span");
@@ -29,7 +29,7 @@ function addTask() {
     saveData();
 }
 
-appTable.addEventListener("click", function(e) {
+taskShowcase.addEventListener("click", function(e) {
     if(e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         saveData();
@@ -40,11 +40,15 @@ appTable.addEventListener("click", function(e) {
 }, false);
 
 function saveData() {
-    localStorage.setItem("data", appTable.innerHTML);
+    localStorage.setItem("data", taskShowcase.innerHTML);
 }
 
 function showData() {
-    appTable.innerHTML = localStorage.getItem("data");
+    taskShowcase.innerHTML = localStorage.getItem("data");
+}
+
+function clearData() {
+    localStorage.removeItem("data");
 }
 
 showData();

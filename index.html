@@ -8,28 +8,13 @@
 </head>
 <body>
     <div id="main-box">
-        <div class="container">
-            <div id="app-header">
-                <h1>Today's To-Do List</h1>
-                <h5 id="current-date"></h5>
-                <div id="add-task">
-                    <input type="text" id="task-input" placeholder="Add a new task">
-                    <button onclick="addTask()">Add Activity</button>
-                </div>
-            </div>
+        <h1>Today's To-Do List</h1>
+        <h5 id="current-date"></h5>
+        <div id="app-header">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button onclick="addTask()">Add Activity</button>
         </div>
-        <div class="container">
-            <ul id="app-table">
-                <!-- <li id="task-list"></li> -->
-            </ul>
-            <!-- <table id="app-table">
-                <tr class="task-list">
-                    <td class="task-order">#1</td>
-                    <td class="task-name">Activity One</td>
-                    <td class="task-check"><input type="checkbox" class="checkbox" onclick="myFunction()"></td>
-                </tr>
-            </table> -->
-        </div>
+        <ul id="task-showcase"></ul>
 
     <script src="index.js"></script>
 </body>

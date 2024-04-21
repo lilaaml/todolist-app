@@ -1,44 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* GLOBAL */
-body {
+/* COLOR PALETTES */
+/* background: #ccdfe9; */
+/* background: #e3d17d; */
+
+* {
     font-family: 'Poppins', sans-serif;
     margin: auto;
-    display: flex;
+    padding: auto;
+    box-sizing: border-box;
+    background: rgb(213, 218, 224);
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.container {
-    padding: 2px;
+    align-items: center; */
+    /* background: #5b5cab; */
 }
 
 #main-box {
+    max-width: 540px;
     justify-content: center;
     margin-top: 5px;
-    width: 65%;
+    width: 100%;
+    /* min-height: 75vh; */
+    height: auto;
+    padding: 10px;
+    color: #fff;
+    /* background-color: #d9e3f1; */
+    /* background: linear-gradient(135deg, #74ccbd, #e9f7f5); */
+    background: rgb(0, 46, 65);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
 }
 
-/* FORM HEADER */
+#main-box h1, #main-box h5 {
+    text-align: center;
+    background: transparent;
+}
+
+/* APP HEADER */
 #app-header {
-    background-color: rgb(217, 227, 241);
-    text-align: center;
-    margin: 0;
-    padding: 10px 0 10px 0;
-    width: 100%;
-}
-
-#app-header h1, #current-date {
-    margin: 0;
-}
-
-#add-task {
-    text-align: center;
-    padding: 5px 0 5px 0;
-    margin-bottom: 5px;
-    width: 100%;
+    /* background: #e3d17d;  */
+    /* text-align: center; */
+    /* background: rgb(234, 237, 238); */
+    justify-content: space-between;
+    background: transparent;
+    display: flex;
     justify-content: center;
+    padding: 10px 0 10px;
+    /* position: absolute; */
+}
+
+#task-input {
+    border: none;
+    outline: none;
+    background: rgb(27, 67, 84);
+    margin: 0;
+    font-size: 1rem;
+    /* color: #fff; */
+    width: 60%;
+    padding: 5px 10px;
+    /* position: relative; */
+}
+
+#app-header h1, #app-header h5 {
+    background: transparent;
+}
+
+#app-header button {
+    /* position: relative; */
+    border: none;
+    outline: none;
+    padding: 3px 10px;
+    background-color: rgb(2, 216, 114);
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
 }
 
 #new-task {
@@ -74,30 +110,3 @@ ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
-
-/* APP TABLE (POSSIBLY UNUSED) */
-/* #app-table {
-    margin: 0;
-    width: 100%;
-}
-
-.task-order, .task-check {
-    text-align: center;
-    padding: 0;
-}
-
-.task-name {
-    padding: 0 5px 0 5px;
-}
-
-.checkbox {
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    width: 30px;
-    outline: 1px solid 7fffd4;
-}
-
-.checked {
-    background-color: #808080;
-} */
