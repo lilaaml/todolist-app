@@ -7,15 +7,18 @@
     <title>To-Do List</title>
 </head>
 <body>
-    <div id="main-box">
-        <h1>Today's To-Do List</h1>
-        <h5 id="current-date"></h5>
-        <div id="app-header">
-            <input type="text" id="task-input" placeholder="Add a new task">
-            <button onclick="addTask()">Add Activity</button>
+    <div class="container">
+        <div id="main-box">
+            <h1>Today's To-Do List</h1>
+            <h5 id="current-date"></h5>
+            <div id="app-header">
+                <input type="text" id="task-input" placeholder="Add a new task">
+                <button onclick="addTask()">Add Activity</button>
+            </div>
+            <ul id="task-showcase"></ul>
         </div>
-        <ul id="task-showcase"></ul>
-
+    </div>
+    
     <script src="index.js"></script>
 </body>
 </html>
